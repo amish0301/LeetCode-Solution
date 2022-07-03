@@ -1,0 +1,9 @@
+void reverseArray(vector<int> &arr , int m)
+{
+        int n = size(arr);
+        for(int i = m + 1 , j = n - 1; i < n; i++ , j--)
+        {
+            if(i >= j) break;
+            swap(arr[i] , arr[j]);
+        }
+}
